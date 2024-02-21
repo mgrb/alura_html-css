@@ -1,8 +1,8 @@
 FROM nginx
 
-# COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/alura_plus-webpage.conf
 
-WORKDIR /usr/share/nginx/html
+WORKDIR /alura_plus-webpage
 
 COPY ./page .
 

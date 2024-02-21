@@ -2,8 +2,8 @@ services:
   alura_plus-webpage: 
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: .devcontainer/Dockerfile.dev
     ports:
       - "8080:8080"
     volumes:
-      - ../page:/alura_plus-webpage
+      - .:/alura_plus-webpage:cached
